@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Calculadora Hispanos Unidos</title>
+
+</head>
+
+<body class="fondo">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-nav" src="assets/img/hispanos logo.png"
+                    alt="hispanos-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="color-text" href="#">Calculadora Hispanos Unidos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">
+                        <img src="assets/img/hispanos logo.png" alt="hispanos-unidos-logo" class="logo-central">
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-sm-0"></div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="container-fluid">
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <h3>Energías </h3>
+                                <div class="energias pt-5 pb-5">
+                                    <h3 id="energias" class="energiastitulo">3/10</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row text-center mb-5">
+                            <div class="col-lg-3 col-sm-3"></div>
+                            <div class="col-lg-2 col-sm-2"><i class="fas fa-plus-circle fa-3x" id="sumar"></i></div>
+                            <div class="col-lg-2 col-sm-2"><i class="fas fa-history fa-3x" id="reiniciar"></i></div>
+                            <div class="col-lg-2 col-sm-2"><i class="fas fa-minus-circle fa-3x" id="restar"></i></div>
+                            <div class="col-lg-3 col-sm-3"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3"></div>
+                        <div class="col-lg-6 col-sm-6 fondo-blanco">
+                            <table class="table caption-top">
+                                <caption><strong>Contador de cartas</strong></caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Parte</th>
+                                        <th scope="col">Axie 1</th>
+                                        <th scope="col">Axie 2</th>
+                                        <th scope="col">Axie 3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Boca</th>
+                                        <td>
+                                            <div class="text-center" id="boca-ax1">0</div>
+                                            <a id="boton-sumar-boca-ax1" class="btn btn-success">+</a><a id="boton-restar-boca-ax1" class="btn btn-danger">-</a>
+                                        </td>
+                                        <td>
+                                            <div class="text-center" id="boca-ax2">0</div>
+                                            <a id="boton-sumar-boca-ax2" class="btn btn-success">+</a><a id="boton-restar-boca-ax2" class="btn btn-danger">-</a>
+                                        </td>
+                                        <td>
+                                            <div class="text-center" id="boca-ax3">0</div>
+                                            <a id="boton-sumar-boca-ax3" class="btn btn-success">+</a><a id="boton-restar-boca-ax3" class="btn btn-danger">-</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Cola</th>
+                                        <td>
+                                            <div class="text-center" id="cola-ax1">0</div>
+                                            <a id="boton-sumar-cola-ax1" class="btn btn-success">+</a><a id="boton-restar-cola-ax1" class="btn btn-danger">-</a>
+                                        </td>
+                                        <td>
+                                            <div class="text-center" id="cola-ax2">0</div>
+                                            <a id="boton-sumar-cola-ax2" class="btn btn-success">+</a><a id="boton-restar-cola-ax2" class="btn btn-danger">-</a>
+                                        </td>
+                                        <td>
+                                            <div class="text-center" id="cola-ax3">0</div> 
+                                            <a id="boton-sumar-cola-ax3" class="btn btn-success">+</a><a id="boton-restar-cola-ax3" class="btn btn-danger">-</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Espalda</th>
+                                        <td>
+                                            <div class="text-center" id="espalda-ax1">0</div> 
+                                            <a id="boton-sumar-espalda-ax1" class="btn btn-success">+</a><a id="boton-restar-espalda-ax1" class="btn btn-danger">-</a>
+                                        </td>
+                                        <td>
+                                            <div class="text-center" id="espalda-ax2">0</div> 
+                                            <a id="boton-sumar-espalda-ax2" class="btn btn-success">+</a><a id="boton-restar-espalda-ax2" class="btn btn-danger">-</a>
+                                        </td>
+                                        <td>
+                                            <div class="text-center" id="espalda-ax3">0</div> 
+                                            <a id="boton-sumar-espalda-ax3" class="btn btn-success">+</a><a id="boton-restar-espalda-ax3" class="btn btn-danger">-</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Cuerno</th>
+                                        <td>
+                                            <div class="text-center" id="cuerno-ax1">0</div> 
+                                            <a id="boton-sumar-cuerno-ax1" class="btn btn-success">+</a><a id="boton-restar-cuerno-ax1" class="btn btn-danger">-</a>
+                                        </td>
+                                        <td>
+                                            <div class="text-center" id="cuerno-ax2">0</div> 
+                                            <a id="boton-sumar-cuerno-ax2" class="btn btn-success">+</a><a id="boton-restar-cuerno-ax2" class="btn btn-danger">-</a>
+                                        </td>
+                                        <td>
+                                            <div class="text-center" id="cuerno-ax3">0</div> 
+                                            <a id="boton-sumar-cuerno-ax3" class="btn btn-success">+</a><a id="boton-restar-cuerno-ax3" class="btn btn-danger">-</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-3 col-sm-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-0"></div>
+        </div>
+        </div>
+    </section>
+    <footer class="bg-black footer-botom mt-5">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12">
+                    <p class="final-description">Página desarrollada por Shammir para Hispanos Unidos</p>
+                    <p class="final-description">Donaciones en $SLP para mejorar esta página cada vez más a la metamask: </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
