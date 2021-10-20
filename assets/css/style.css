@@ -34,7 +34,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 700;
 }
 .fondo{
