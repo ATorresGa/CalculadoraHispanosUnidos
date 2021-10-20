@@ -21,7 +21,7 @@
     bottom: 0;
 }
 .energias{
-    background: url('assets/img/energy1.png') no-repeat center;
+    background: url('../assets/img/energy1.png') no-repeat center;
     background-size: contain;
     text-align: center;
     width: 5.5rem;
@@ -38,7 +38,7 @@
     font-weight: 700;
 }
 .fondo{
-    background:url("assets/img/fondo.jpg") no-repeat fixed center;
+    background:url("../assets/img/fondo.jpg") no-repeat fixed center;
 }
 .fondo-blanco{
     background-color: #fff;
