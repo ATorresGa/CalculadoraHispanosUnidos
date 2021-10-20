@@ -3,7 +3,7 @@
     max-height: 5rem;
 }
 .color-text{
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: larger;
 }
@@ -34,7 +34,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    color: #FFFFFF;
+    color: #000000;
     font-weight: 700;
 }
 .fondo{
