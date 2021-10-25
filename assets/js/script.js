@@ -29,8 +29,11 @@ $(document).ready(function(){
     var restarCuerno1= document.getElementById("boton-restar-cuerno-ax1")
     var restarCuerno2= document.getElementById("boton-restar-cuerno-ax2")
     var restarCuerno3= document.getElementById("boton-restar-cuerno-ax3")
+    //botones para restar las energias de los axies muertos
+    var killAx1= document.getElementById("kill-ax1");
+    var killAx2= document.getElementById("kill-ax2");
+    var killAx3= document.getElementById("kill-ax3");
 
-    
     //metodos para para funciones de las energias
     sumar.addEventListener("click",function(){
         let suma=$("#energias").text();
@@ -59,13 +62,15 @@ $(document).ready(function(){
     })
     
     reiniciar.addEventListener("click",function(){
-        let suma=$("#energias").text("3/10");
+        let textoEnergias=$("#energias").text("3/10");
+        let textoRondas=$("#rondas").text("1/10")
     })
 
     siguiente.addEventListener("click",function(){
         let suma=$("#energias").text();
         suma=suma.split("/")
         resultado=parseInt(suma[0])+2;
+        sumarRondas();
         if (resultado>10) {
             resultado=10;
             $("#energias").text(resultado+"/10")
@@ -74,7 +79,46 @@ $(document).ready(function(){
         }
         
     })
+    function sumarRondas(){
+        let rondas=$("#rondas").text()
+        rondas= rondas.split("/")
+        sumaRondas= parseInt(rondas[0])+1
+        if (sumaRondas>10) {
+            sumaRondas=10;
+            $("#rondas").text(sumaRondas+"/10")
+        } else {
+            $("#rondas").text(sumaRondas+"/10")
+        }
+    }
 
+    //funcion botones ultima fila eliminar axies
+     killAx1.addEventListener("click",function(){
+         let sumaCartas=2;
+         $("#boca-ax1").text(sumaCartas)
+         $("#cola-ax1").text(sumaCartas)
+         $("#espalda-ax1").text(sumaCartas)
+         $("#cuerno-ax1").text(sumaCartas)
+         let sumaTotal= parseInt($("#total_cartas").text())-8
+        $("#total_cartas").text(sumaTotal)
+     })
+     killAx2.addEventListener("click",function(){
+        let sumaCartas=2;
+        $("#boca-ax2").text(sumaCartas)
+        $("#cola-ax2").text(sumaCartas)
+        $("#espalda-ax2").text(sumaCartas)
+        $("#cuerno-ax2").text(sumaCartas)
+        let sumaTotal= parseInt($("#total_cartas").text())-8
+       $("#total_cartas").text(sumaTotal)
+    })
+    killAx3.addEventListener("click",function(){
+        let sumaCartas=2;
+        $("#boca-ax3").text(sumaCartas)
+        $("#cola-ax3").text(sumaCartas)
+        $("#espalda-ax3").text(sumaCartas)
+        $("#cuerno-ax3").text(sumaCartas)
+        let sumaTotal= parseInt($("#total_cartas").text())-8
+       $("#total_cartas").text(sumaTotal)
+    })
     //funcion de los botones de la tabla primera fila (Boca)
     sumarBoca1.addEventListener("click",function(){
         let suma=$("#total_cartas").text();
